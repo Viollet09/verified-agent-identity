@@ -1,6 +1,10 @@
 name: Verify Human Identity
 
 on:
+  push:
+    branches:
+      - develop
+      - main
   workflow_dispatch:
     inputs:
       agent_name:
